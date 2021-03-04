@@ -19,7 +19,7 @@ restService.post("/elvira", function(req, res) {
     req.body.queryResult.parameters &&
     req.body.queryResult.parameters.echoText
       ? req.body.queryResult.parameters.echoText
-      : "Seems like some problem. Speak again."+req.body;
+      : "Ha habido algunos problemas. Vuelve a intentarlo"+req.body;
   return res.json({
 
   "fulfillmentText": speech,
