@@ -19,8 +19,7 @@ restService.post("/echo", function(req, res) {
     req.body.queryResult.parameters &&
     req.body.queryResult.parameters.echoText
       ? req.body.queryResult.parameters.echoText
-  :https://datosabiertos.ayto-arganda.es/api/3/action/group_list;
-     // : "aaaaaaaa algunos problemas. Vuelve a intentarlo"+req.body;
+ :"aaaaaaaa algunos problemas. Vuelve a intentarlo"+req.body;
   return res.json({
 
   "fulfillmentText": speech,
