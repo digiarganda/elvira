@@ -22,7 +22,7 @@ const dialogflowFulfillment = (request, response) => {
     }
 
     let intentMap = new Map();
-    intentMap.set("Webhook3", sayHello)
+    intentMap.set("Webhookprueba", sayHello)
     agent.handleRequest(intentMap)
 
 }
