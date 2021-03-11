@@ -6,7 +6,7 @@ const app = express()
 app.use(bodyParser.json())
 const port = process.env.PORT || 3000
 
-app.post('/dialogflow-fulfillment', (request, response) => {
+app.post('/webhook', (request, response) => {
     dialogflowFulfillment(request, response)
 })
 
@@ -22,7 +22,7 @@ const dialogflowFulfillment = (request, response) => {
     }
 
     let intentMap = new Map();
-    intentMap.set("Default Welcome Intent", sayHello)
+    intentMap.set("Webhook3", sayHello)
     agent.handleRequest(intentMap)
 
 }
